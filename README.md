@@ -4,6 +4,6 @@ docker-go-work
 ```
 docker pull ghostry/go-work
 docker container stop ggo && docker container rm ggo
-docker run -d -v /data/gosrc:/go/src -p 8080:8080 --name ggo ghostry/go-work
+docker run -d -v /data/svn:/go/svn -p 8080:8080 --name ggo ghostry/go-work
 docker exec -it ggo sh
 ```
